@@ -1,0 +1,38 @@
+{
+  "name": "homebridge-g-on-alice",
+  "version": "0.1.0",
+  "description": "Yandex Alice Skill frontend for Homebridge. Developed by G-On",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-On-dev/homebridge-g-on-alice.git"
+  },
+  "keywords": [
+    "alice",
+    "yandex",
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=4.4.5",
+    "homebridge": ">=0.4.16"
+  },
+  "devDependencies": {
+    "documentation": "11.0.0"
+  },
+  "dependencies": {
+    "bottleneck": ">=2.18.0",
+    "debug": ">2.6.9",
+    "hap-node-client": ">=0.0.25",
+    "mqtt": ">=2.18.8",
+    "mqtt-pattern": "^1.2.0"
+  },
+  "author": "G-On-dev",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/G-On-dev/homebridge-g-on-alice/issues"
+  },
+  "homepage": "https://github.com/G-On-dev/homebridge-g-on-alice#readme"
+}

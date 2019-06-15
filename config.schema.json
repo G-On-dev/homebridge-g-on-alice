@@ -1,0 +1,64 @@
+{
+  "pluginAlias": "G-On Alice",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "An account to link your Yandex Alice to Homebridge needs to created on https://homebridge.g-on.io/. This account will be used when you enable the skill in the Yandex App, and in the configuration below.",
+  "footerDisplay": "See https://github.com/G-On-dev/homebridge-g-on-alice for more information and instructions.\n\nHomebridge Yandex Alice Skill: %link to Yandex Alice Skill, once it's public% ",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "G-On Alice",
+        "description": "Plugin name as displayed in the Homebridge log"
+      },
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true,
+        "description": "Username for https://homebridge.g-on.io/"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true,
+        "description": "Password for https://homebridge.g-on.io/"
+      },
+      "pin": {
+        "title": "Homebridge Pin",
+        "type": "string",
+        "placeholder": "031-45-154",
+        "description": "This needs to match the Homebridge pin set in your config.json file"
+      },
+      "debug": {
+        "title": " Enable Debug Mode",
+        "type": "boolean"
+      }
+    }
+  },
+  "layout": [
+    "name",
+    {
+      "type": "flex",
+      "flex-flow": "row wrap",
+      "items": [
+        "username",
+        {
+          "key": "password",
+          "type": "password"
+        }
+      ]
+    },
+    {
+      "type": "fieldset",
+      "title": "Optional Settings",
+      "expandable": true,
+      "expanded": false,
+      "items": [
+        "debug"
+      ]
+    }
+  ]
+}
