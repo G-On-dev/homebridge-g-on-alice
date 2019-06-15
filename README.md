@@ -13,7 +13,7 @@ Enable Yandex Alice access and control your homebridge controlled devices and ac
 * Support for Light Bulbs, Switches and outlets
 * Support for Thermostats
 * Support for Color Light Bulbs and Colour Temperature of white Light bulbs (not yet)
-* Support for Fans (As Alexa doesn't support Fans coverings I'm using Other) (not tested yet)
+* Support for Fans (not tested yet)
 * Support for Garage Doors
 * Support up to 100 accessories
 
@@ -33,7 +33,7 @@ This only supports accessories connected via a homebridge plugin, any 'Homekit' 
 
 ## Unsupported device types
 
-* Camera's ( for use with an Alexa show etc )
+* Camera's
 * Eve devices
 * Security Systems
 * Audio and playback systems
@@ -42,17 +42,16 @@ This only supports accessories connected via a homebridge plugin, any 'Homekit' 
 
 ## Light bulbs / Switches / Dimmer Switches
 
-* Alexa, turn on *device*
-* Alexa, turn off *device*
+* Алиса, включи *device*
+* Алиса, выключи *device*
 
-* Alexa, set *device* to 50
-* Alexa, dim *device*
-* Alexa, brighten *device*
+* Алиса, установи яркость *device* на минимум
+* Алиса, прибавь яркость *device* 
 
 ## Thermostat's and Heater / Cooler's
 
-* Alexa, set thermostat to 20
-* Alexa, set thermostat to heat/cool/automatic/off
+* Алиса, установи температуру *device* на 20 градусов.
+* Алиса, переведи *device* в режим охлаждения/нагрева.
 
 # Installation of homebridge-g-on-alice
 
