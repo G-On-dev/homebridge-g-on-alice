@@ -1,6 +1,6 @@
 {
   "name": "homebridge-g-on-alice",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Yandex Alice Skill frontend for Homebridge. Developed by G-On",
   "main": "plugin.js",
   "scripts": {
