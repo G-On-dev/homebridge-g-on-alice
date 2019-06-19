@@ -1,7 +1,7 @@
 {
   "name": "homebridge-g-on-alice",
-  "version": "0.1.3",
-  "description": "Yandex Alice Skill frontend for Homebridge. Developed by G-On",
+  "version": "0.1.4",
+  "description": "Yandex Alice Voice Assistant plugin for Homebridge. Developed by G-On",
   "main": "plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,9 @@
   "keywords": [
     "alice",
     "yandex",
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "voice control",
+    "smart home"
   ],
   "engines": {
     "node": ">=4.4.5",
