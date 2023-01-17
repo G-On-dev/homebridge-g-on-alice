@@ -1,6 +1,6 @@
 {
   "name": "homebridge-g-on-alice",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Yandex Alice Voice Assistant plugin for Homebridge. Developed by G-On",
   "main": "plugin.js",
   "scripts": {
@@ -19,14 +19,14 @@
   ],
   "engines": {
     "node": ">=10.17.0",
-    "homebridge": ">=1.0.0"
+    "homebridge": "^1.6.0"
   },
   "devDependencies": {},
   "dependencies": {
     "@oznu/hap-client": "^1.7.2",
     "bottleneck": ">=2.18.0",
     "debug": ">2.6.9",
-    "hap-node-client": ">=0.1.16",
+    "hap-node-client": "^0.2.4",
     "mqtt": ">=2.18.8",
     "mqtt-pattern": "^1.2.0"
   },
