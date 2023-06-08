@@ -5,16 +5,26 @@ Enable Yandex Alice access and control your homebridge controlled devices and ac
 # Features
 
 * Supports one HomeBridge, running on the same host as this plugin
-* Supports the following HomeKit accessory types: Lightbulb, Outlet, Switch, Fan and Thermostat.
+* Supports the following HomeKit accessory types: Lightbulb, Outlet, Switch, Fan, Thermostat and others.
 * This plugin does not have any devices or accessories that are visible from Homekit, and does not need to be added on the Home app.
 
 # Supported devices
 
-* Support for Light Bulbs, Switches and outlets
-* Support for Thermostats
-* Support for Color Light Bulbs and Colour Temperature of white Light bulbs (not yet)
-* Support for Fans (not tested yet)
-* Support for Garage Doors
+* Support for Light Bulbs (on/off, brightness, color change and color temperature for white light)
+* Support for Switches and outlets (on/off)
+* Support for Thermostats (target heating cooling ctate, target and current temperature, target and current humidity), 
+* Support for Heater/Cooler (on/off, target heating cooling ctate, current temperature, rotation speed)
+* Support for Humidifier Dehumidifier (on/off, current humidity, relative humidity dehumidifier or humidifier threshold (only one is available), rotation speed)
+* Support for Air Purifier (on/off, rotation speed)
+* Support for Door, Window, Window Covering (open/close, target position)
+* Support for Garage Door Opener, Lock Mechanism (open/close)
+* Support for Buttons (single, double, long press)
+* Support for Sensors: Temperature, Humidity, Light, Carbon Dioxide (level and status low battery)
+* Support for Air Quality Sensor (PM10 Density, PM2.5 Density, VOC Density, status low battery)
+* Support for Binary Sensors: Contact, Leak, Motion, Occupancy, Smoke (level and status low battery)
+* Support for Fan (on/off, rotation speed)
+* Support for Valve, Faucet (on/off)
+* Support for Televisions, Television Speakers, Speakers (on/off, play/pause, mute, volume)
 * Support up to 100 accessories
 
 Alice device names are the same as the homebridge device names.
@@ -27,16 +37,21 @@ This only supports accessories connected via a homebridge plugin, any 'Homekit' 
 
 * Lightbulbs, outlets and switches
 * Dimmable lightbulbs, outlets and switches
-* Colour lightbulbs (not yet)
+* Color light bulbs and white light bulbs with color temperature adjustment
 * Thermostat
 * Heater/Cooler
+* Humidifiers
+* Air Purifiers
+* Doors, windows, curtains
+* Buttons
+* Televisions, Speakers
 
-## Unsupported device types
+### Unsupported device types
 
 * Camera's
 * Eve devices
 * Security Systems
-* Audio and playback systems
+* Some audio and playback systems
 
 # Alice Voice Commands
 
@@ -46,6 +61,7 @@ This only supports accessories connected via a homebridge plugin, any 'Homekit' 
 * Алиса, выключи *device*
 
 * Алиса, установи яркость *device* на минимум
+* Алиса, установи яркость *device* на 50%
 * Алиса, прибавь яркость *device* 
 
 ## Thermostat's and Heater / Cooler's
@@ -93,6 +109,7 @@ sudo npm install -g git+https://github.com/G-On-dev/homebridge-g-on-alice.git
 ### Optional parameters
 
 * pin - If you had changed your homebridge pin from the default of "pin": "031-45-154" ie
+* Notifies the smart home platform about the changed state of the devices
 
 ```
 "platforms": [

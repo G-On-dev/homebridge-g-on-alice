@@ -20,6 +20,7 @@ function aliceHome(log, config, api) {
   this.pin = config['pin'] || "031-45-154";
   this.username = config['username'] || false;
   this.password = config['password'] || false;
+  this.notifies = config['notifies'] || false;
 
   // Enable config based DEBUG logging enable
   this.debug = config['debug'] || false;
@@ -69,6 +70,7 @@ aliceHome.prototype.didFinishLaunching = function() {
     password: this.password,
     clientId: this.username,
     debug: this.debug,
+    notifies: this.notifies,
     log: this.log,
     pin: this.pin,
     servers: [{
@@ -85,6 +87,7 @@ aliceHome.prototype.didFinishLaunching = function() {
 
   // Alice mesages
 
+  this.eventBus.on('hapEvent', aliceActions.aliceEvent.bind(this));
   this.eventBus.on('discovery', aliceActions.aliceDiscovery.bind(this));
   this.eventBus.on('action', aliceActions.aliceAction.bind(this));
   this.eventBus.on('query', aliceActions.aliceQuery.bind(this));
