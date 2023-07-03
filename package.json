@@ -1,6 +1,6 @@
 {
   "name": "homebridge-g-on-alice",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Yandex Alice Voice Assistant plugin for Homebridge. Developed by G-On",
   "main": "plugin.js",
   "scripts": {
